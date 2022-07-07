@@ -1,0 +1,11 @@
+label.labelblock {
+    display: block;
+    position: relative;
+    left: 12px;
+    top: 0px
+}
+
+label.labelblock input {
+    position: absolute;
+    left: 150px;
+}

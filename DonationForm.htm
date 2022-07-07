@@ -1,0 +1,139 @@
+<html>
+
+<head>
+   <!-- 
+   New Perspectives on HTML and XHTML
+   Tutorial 6
+   Review Assignment
+
+   The Lighthouse Volunteer Page
+   Author: 
+   Date:   
+
+   Filename:         volunteer.htm
+   Supporting files: back.jpg, left.jpg, lhouse.jpg, main.css
+                     right.jpg, vforms.css
+
+-->
+
+   <title>Lighthouse Volunteer Form</title>
+   <link href="Donationformat.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+   <div id="head"><img src="lhouse.jpg" alt="The Lighthouse" /></div>
+
+   <div id="links">
+      <ul>
+         <li><a href="#">home</a></li>
+         <li><a href="#">projects</a></li>
+         <li><a href="#">upcoming events</a></li>
+         <li><a href="#">community links</a></li>
+         <li><a href="#">staff</a></li>
+         <li><a href="#">donations</a></li>
+         <li><a href="#">volunteers</a></li>
+         <li><a href="#">contact info</a></li>
+      </ul>
+   </div>
+
+   <div id="mainContent">
+      <div id="leftColumn">
+         <p>Thank you for considering donating your time and talents to The
+            Lighthouse. While we always welcome financial support, we cannot
+            continue to serve the public without volunteers like you.
+         </p>
+         <p>Please fill out the form on this page indicating your interests
+            and talents. Everyone has something to offer, so don't be shy.
+            And remember, we can always teach you, so don't let inexperience
+            keep you away.</p>
+         <p>While you are helping others, you too will gain from the experience.
+            Many of our volunteers have been with us for years. One of our
+            volunteers told me the other day, "Terry, The Lighthouse has
+            given more to me than I have ever given to it."</p>
+         <p>Welcome to the team!</p>
+         <p>&mdash; Terry Ives<br />
+            &nbsp;&nbsp;&nbsp; Director, <i>The Lighthouse</i></p>
+         <p>P.S. Please consider a <a href="#">financial donation</a>
+            to help us continue to support our neighbors in the community.</p>
+      </div>
+
+      <div id="rightColumn">
+         <h1>Volunteer Form</h1>
+         <p><span>*</span> indicates required information</p>
+
+         <!--
+		    Add Form here....
+		  -->
+         <form name="registerForm" id="registerForm" action="RegisterScript.php">
+            <fieldset id="AddressOptions">
+               <legend>Address For</legend>
+               <label class="Optionlable">Home
+                  <input type="radio" id="homeType" name="addressType" value="home" />
+
+               </label>
+               <label class="Optionlable">Business
+                  <input type="radio" id="busType" name="addressType" value="business" />
+
+               </label>
+               <select name="addressType" id="addressType">
+                  <optgroup label="Canada">
+                     <option>Qubec</option>
+                     <option>Ontario</option>
+                     <option>British Coloumbia</option>
+                  </optgroup>
+               </select>
+
+            </fieldset>
+            <fieldset id="contact">
+
+               <legend>Contact information</legend>
+
+               <label class="labelblock"> First Name:<span>*</span> <input type="text" id="fname" /></label>
+               <label class="labelblock"> Last Name:<span>*</span> <input type="text" id="lname" /></label>
+               <label class="labelblock"> Phone :<span>*</span> <input type="text" id="phone"
+                     style="max-width: 70px;" /></label>
+               <label class="labelblock"> Street Address :<span>*</span> <input type="text" id="sadd" /></label>
+               <label class="labelblock1" style="margin-left: 160px;">City :<span>*</span> <input type="text"
+                     id="city" /></label>
+               <label class="labelblock1"> State :<span>*</span> <input type="text" id="state " value="QC" /></label>
+               <label class="labelblock1"> Zip :<span>*</span> <input type="text" id="zip" /></label>
+
+
+            </fieldset>
+            <fieldset>
+               <legend>Power Consumption</legend>
+               <label class="labelblock"> Electricity Consumption:<span>*</span> <input type="text" id="elec "
+                     style="max-width: 100px;" /></label>
+               <label class="labelblock"> Gas Consumption:<span>*</span> <input type="text" id="gaz"
+                     style="max-width: 100px;" /></label>
+            </fieldset>
+            <fieldset>
+               <legend>Feedback</legend>
+               <label class="lablefeedback">
+                  <input type="checkbox" id="message" name="message" value="yes" />
+                  Do you Want To receve update email messages?
+               </label>
+               Enter Your Comments:
+               <label class="lablefeedback">
+                  <textarea name="comment" id="comment" rows="5"
+                     cols="50">Please Insert Your Comments here</textarea></label>
+            </fieldset>
+            <input type="submit" value="Register" />
+            <input type="reset" value="Cancel" />
+
+         </form>
+
+      </div>
+
+      <address>
+         The Lighthouse &bull;
+         150 Cavates Rd. &bull;
+         St. Peters, MO 63376 &bull;
+         (636) 555 - 4477
+      </address>
+
+   </div>
+</body>
+
+</html>

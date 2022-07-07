@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>Registration Form </title>
+    <link href="formformat13.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="lablelegend">
+    <form name="registerForm" id="registerForm" action="RegisterScript.php">
+        <fieldset id="AddressOptions">
+            <legend>Address For</legend>
+            <label class="Optionlable">Home
+                <input type="radio" id="homeType" name="addressType" value="home" />
+
+            </label>
+            <label class="Optionlable">Business
+                <input type="radio" id="busType" name="addressType" value="business" />
+
+            </label>
+            <select name="addressType" id="addressType" size="2">
+                <option value="homeType">Home</option>
+                <option value="busType">Business</option>
+            </select>
+
+        </fieldset>
+        <fieldset id="contact">
+
+            <legend>Contact information</legend>
+
+            <label class="labelblock"> First Name:<span>*</span> <input type="text" id="fname" /></label>
+            <label class="labelblock"> Last Name:<span>*</span> <input type="text" id="lname" /></label>
+            <label class="labelblock"> Phone :<span>*</span> <input type="text" id="phone"
+                    style="max-width: 70px;" /></label>
+            <label class="labelblock"> Street Address :<span>*</span> <input type="text" id="sadd" /></label>
+            <label class="labelblock1" style="margin-left: 160px;">City :<span>*</span> <input type="text"
+                    id="city" /></label>
+            <label class="labelblock1"> State :<span>*</span> <input type="text" id="state " value="QC" /></label>
+            <label class="labelblock1"> Zip :<span>*</span> <input type="text" id="zip" /></label>
+
+
+        </fieldset>
+        <fieldset>
+            <legend>Power Consumption</legend>
+            <label class="labelblock"> Electricity Consumption:<span>*</span> <input type="text" id="elec "
+                    style="max-width: 100px;" /></label>
+            <label class="labelblock"> Gas Consumption:<span>*</span> <input type="text" id="gaz"
+                    style="max-width: 100px;" /></label>
+        </fieldset>
+        <fieldset>
+            <legend>Feedback</legend>
+            <label class="lablefeedback"> Enter Your Comments:<span>*</span> <textarea name="comment"
+                    id="comment"></textarea></label>
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
